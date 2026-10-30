@@ -1,0 +1,16 @@
+{
+  "name": "service-desk",
+  "private": true,
+  "scripts": {
+    "dev": "pnpm -r --parallel run dev",
+    "dev:api": "pnpm --filter @service-desk/api dev",
+    "dev:web": "pnpm --filter @service-desk/web dev",
+    "dev:bot": "pnpm --filter @service-desk/telegram-bot dev",
+    "build": "pnpm -r run build",
+    "lint": "pnpm -r run lint",
+    "test": "pnpm -r run test"
+  },
+  "engines": {
+    "node": ">=20"
+  }
+}
